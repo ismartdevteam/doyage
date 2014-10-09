@@ -1,3 +1,37 @@
-<div class="HeaderPerMenu" ng-repeat="PerMenuDataHeader in HeaderInfo" MenuID="{{PerMenuDataHeader.id}}">
-    <a href="#/{{PerMenuDataHeader.name.toUpperCase()}}">{{PerMenuDataHeader.name.toUpperCase()}}</a>
-</div>
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#/Home">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Doyage</span>Travel
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#/Mission">Mission</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#/Tours">Tours</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#/Stories">Stories</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#/Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+ <script src="js/grayscale.js"></script>

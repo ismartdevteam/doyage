@@ -6,21 +6,57 @@ and open the template in the editor.
 -->
 <html ng-app="MyApp">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/mycss.css" rel="stylesheet" type="text/css">
+        <title>Doyage</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/grayscale.css" rel="stylesheet">
+        <link href="css/mycss.css" rel="stylesheet">
+        <link href="css/responsiveslides.css" rel="stylesheet" >
+                <link href="css/slider.css" rel="stylesheet" >
+        <!-- Custom Fonts -->
+        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  
     </head>
-    <body>
-        <div class="headerContainer" ng-controller="HeaderCtrl" ng-include=" 'view/header.html' ">
-            
+
+        
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
+
+        <div  ng-controller="HeaderCtrl" ng-include=" 'view/header.html'">
+
         </div>
+
+      
         <div ng-view class="BodyMM">
-            
+
         </div>
+ 
+
+
+
+
         <script src="js/jquery-1.11.1.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+
+
+
+
+
         <script src="angular/angular.js"></script>
         <script src="angular/angular-route.js"></script>
         <script src="js/myapp.js"></script>
+          <script src="js/responsiveslides.min.js"></script>   
     </body>
 </html>

@@ -1,29 +1,37 @@
-  <script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
+<script>
+
+    $(function() {
 
 
-      $("#slider1").responsiveSlides({
-        auto: false,
-        pager: true,
-        nav: true,
-        speed: 500,
-        maxwidth: 1200,
-        namespace: "centered-btns"
- 
-      });
+        $("#slider1").responsiveSlides({
+            auto: true,
+            pager: true,
+            nav: true,
+            speed: 2500,
+            maxwidth: 1200,
+            namespace: "centered-btns"
+
+        });
 
     });
-  </script> 
+</script> 
+<div class="mainBack">
+    <div class="mainBackImage">
+        <ul class="rslides">
+            <li><img src="img/intro-bg.jpg" alt=""></li>
 
-  <div class="sliderCont">
-  <div id="wrapper">
-      <div class="rslides_container">
-      <ul class="rslides" id="slider1">
-        <li><img src="img/1.jpg" alt=""></li>
-        <li><img src="img/2.jpg" alt=""></li>
-        <li><img src="img/3.jpg" alt=""></li>
-      </ul>
+        </ul>
     </div>
+    <div class="sliderCont">
+        <div id="wrapper">
+            <div class="rslides_container">
+                <ul class="rslides" id="slider1">
+                    <li><img src="img/1.jpg" alt=""></li>
+                    <li><img src="img/2.jpg" alt=""></li>
+                    <li><img src="img/3.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </div>

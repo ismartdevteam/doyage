@@ -52,10 +52,12 @@ app.controller("HomeCtrl", function($http, $scope) {
 //      console.log(data);
 //  });
 
+
     $scope.data = "hha";
 
 });
 app.controller("TourCtrl", function($scope, $routeParams) {
+     
     $scope.data = $routeParams.ID;
 });
 app.controller("HeaderCtrl", function($http, $scope) {

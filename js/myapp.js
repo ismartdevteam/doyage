@@ -2,15 +2,15 @@ app = angular.module("MyApp", ["ngRoute"]);
 app.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
-                when('/Home', {
+                when('/HOME', {
                     templateUrl: 'view/home.html',
                     controller: 'HomeCtrl'
                 }).
-                when('/Mission', {
+                when('/MISSION', {
                     templateUrl: 'view/mission.html',
                     controller: 'HomeCtrl'
                 }).
-                when('/Tours', {
+                when('/TOURS', {
                     templateUrl: 'view/tour.html',
                     controller: 'TourCtrl'
                 }).
@@ -19,7 +19,7 @@ app.config(['$routeProvider',
                     controller: 'StoriesCtrl'
                 }).
                 otherwise({
-                    redirectTo: '/Home'
+                    redirectTo: '/HOME'
                 });
                
     }]);
@@ -47,6 +47,7 @@ app.controller("StoriesCtrl", function($http, $scope, $routeParams) {
         }
     };
 });
+
 app.controller("HomeCtrl", function($http, $scope) {
 //  $http.post("fb.com",{task:1}).success(function(data){
 //      console.log(data);
@@ -56,6 +57,11 @@ app.controller("HomeCtrl", function($http, $scope) {
     $scope.data = "hha";
 
 });
+app.controller('LoginCtrl',function ($http,$scope){
+  $scope.submit = function() {
+      console.log($scope.user);
+  }
+      });
 app.controller("TourCtrl", function($scope, $routeParams) {
      
     $scope.data = $routeParams.ID;

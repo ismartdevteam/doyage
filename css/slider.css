@@ -5,13 +5,27 @@
     max-width: 1200px;
 
 }
+/*@media(max-width: 1920px) {
+    #wrapper{
+       margin-top: 75px
+    }
+
+}
+@media(max-width: 980px) {
+   
+   #wrapper {
+        margin-top: 30px;
+
+    }
+
+}*/
 #wrapper {
 
-    margin-top: 75px;
+
     float: left;
 
     width: 100%;
-    margin-bottom: 50px;
+
 }
 
 h1 {
@@ -36,7 +50,7 @@ a {
 
 .rslides_container {
 
-    margin-bottom: 50px;
+  
     position: relative;
     float: left;
     width: 100%;

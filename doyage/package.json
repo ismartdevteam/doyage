@@ -1,0 +1,23 @@
+{
+  "name": "Doyage",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~3.4.8",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "hjs": "~0.0.6",
+    "less-middleware": "0.1.15"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-plumber": "^0.6.6",
+    "gulp-sass": "^1.1.0"
+  }
+}
